@@ -1,6 +1,6 @@
 var w_aspect = window_get_height()/window_get_width()
 
-size_ = 2200
+size_ = 1700
 
 camera_apply(view_camera[0])
 view_camera[0] = camera_create_view(x, y, size_, size_*w_aspect, 0, player_obj)

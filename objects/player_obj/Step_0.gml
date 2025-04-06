@@ -6,12 +6,14 @@
 	var up_ = keyboard_check(ord("W"))
 	var down_ = keyboard_check(ord("S"))
 	
+	var action_ = keyboard_check(ord("E"))
+	
 #endregion controle
 
 #region moviment
 	
-	hspd = (right_ - left_) * spd
-	vspd = (down_-up_) * spd	
+	hspd = lerp(hspd, (right_ - left_) * spd, 0.1)
+	vspd = lerp(vspd, (down_ - up_) * spd,  0.1)	
 	
 	if (hspd != 0){ image_xscale = sign(hspd);}
 	
@@ -38,3 +40,8 @@
 
 #endregion moviment
 
+#region interacao
+	if (action_){
+		var bdf = instance_create_layer(0, 0, layer[0], balao_de_fala_obj, {})
+	}
+#endregion interacao

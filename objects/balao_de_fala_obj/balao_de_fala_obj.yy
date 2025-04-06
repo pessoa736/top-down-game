@@ -1,9 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"balao_de_fala",
-  "eventList":[],
+  "%Name":"balao_de_fala_obj",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"balao_de_fala",
+  "name":"balao_de_fala_obj",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
