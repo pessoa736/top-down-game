@@ -41,7 +41,7 @@
 #endregion moviment
 
 #region interacao
-	if (action_){
-		var bdf = instance_create_layer(0, 0, layer[0], balao_de_fala_obj, {})
+	if (action_ and !instance_exists(balao_de_fala_obj)){
+		balao_de_fala_obj.visivel = true
 	}
 #endregion interacao
