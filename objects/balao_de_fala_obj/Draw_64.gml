@@ -14,6 +14,6 @@ if (visivel) {
 
 	draw_sprite_ext(sprite_index, image_index, x, y, w, h,  image_angle, image_blend, image_alpha)
 
-
-	draw_text(x+7, y+7, sprite_height)
+	var texto_parcial = string_copy(textos[indice], 1, floor(caracteres_visiveis));
+	draw_text(x+7, y+7, texto_parcial)
 }
